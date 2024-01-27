@@ -1,0 +1,66 @@
+<div>
+    <div class="inital-intro-page">
+        <div class="heading-tab">
+            <span class="heading-tab-txt">
+                1 Treva
+            </span>
+        </div>
+        <div class="containoer-intro-main">
+            <div class="containoer-intro-one">
+                <div class="intro-txt-heading">
+                    Lorem ipsum dolor sit amet consectetur
+                </div>
+                <div class="intro-txt-sub-heading">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+                <div class="btn-div"><button class="sing-up-btn">Sing UP Now</button></div>
+            </div>
+            <div>
+                <img class="img" src="/assets/intro-image.png" alt="Introduction Img">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="login-page">
+        <div class="contact-form">
+            <h2 class="contact-txt">Contact Us</h2>
+            <p class="cont-descri">Please fill out the form below to get in touch with us.</p>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..." required
+                        [(ngModel)]="formData.name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..." required
+                        [(ngModel)]="formData.email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number..." required
+                        [(ngModel)]="formData.phone">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Contact</label>
+                    <select id="reason" name="reason" [(ngModel)]="formData.reason">
+                        <option value="support">Customer Support</option>
+                        <option value="billing">Billing</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="txt-box-msg" id="message" name="message" placeholder="Type your message..."
+                        required [(ngModel)]="formData.message"></textarea>
+                </div>
+                <div class="submit-btn-div">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

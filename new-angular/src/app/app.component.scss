@@ -1,0 +1,240 @@
+body {
+    margin: 0px !important;
+}
+
+.inital-intro-page {
+    // width: 100%;
+    // height: 810px;
+
+    background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+
+
+    .heading-tab {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+
+        .heading-tab-txt {
+            padding-top: 28px;
+            padding-left: 180px;
+        }
+
+    }
+
+    .containoer-intro-main {
+
+        display: flex;
+        gap: 182px;
+        height: 700px;
+
+
+        .containoer-intro-one {
+            max-width: 544px;
+            width: 80%;
+        }
+
+        .intro-txt-heading {
+            color: #FFF;
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 140px;
+            padding-left: 180px;
+            font-style: normal;
+        }
+
+        .intro-txt-sub-heading {
+            color: rgba(255, 255, 255, 0.70);
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            padding-left: 180px;
+            padding-top: 24px;
+        }
+
+        .btn-div {
+            padding-top: 24px;
+            padding-left: 180px;
+
+            .sing-up-btn {
+                display: inline-flex;
+                padding: 12px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 4px;
+                background: #2783F3;
+                border: 0px;
+
+            }
+        }
+
+    }
+
+
+}
+
+
+
+.login-page {
+    background: #F1F5F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.contact-form {
+    background: #FFF;
+    width: 90%;
+    max-width: 640px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.10), 0px 23px 23px 0px rgba(0, 0, 0, 0.09), 0px 51px 31px 0px rgba(0, 0, 0, 0.05), 0px 91px 36px 0px rgba(0, 0, 0, 0.01), 0px 142px 40px 0px rgba(0, 0, 0, 0.00);
+}
+
+.contact-txt {
+    margin: 0px;
+    color: #03062F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.cont-descri {
+    margin: 0px;
+    color: rgba(3, 6, 47, 0.70);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.email-mob-field {
+    width: 100%;
+}
+
+.submit-btn-div {
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    border-radius: 4px;
+    background: #2783F3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+// .img {
+//     width: 100%; /* Set the image to take up the full width of its container */
+//     height: auto; /* This centers the image within its container */
+// }
+
+@media (max-width: 768px) {
+
+    .heading-tab,
+    .heading-tab-txt {
+        padding-left: 20px !important;
+        padding-top: 34px !important;
+
+    }
+
+    .intro-txt-heading,
+    .intro-txt-sub-heading {
+        padding-left: 20px !important;
+        padding-top: 34px !important;
+
+    }
+
+    .btn-div,
+    .sing-up-btn {
+        padding-left: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .heading-tab,
+    .heading-tab-txt {
+        padding-left: 10px !important;
+        padding-top: 14px !important;
+
+    }
+
+    .intro-txt-heading,
+    .intro-txt-sub-heading {
+        padding-left: 20px !important;
+        padding-top: 14px !important;
+    }
+
+    .btn-div,
+    .sing-up-btn {
+        padding-left: 10px !important;
+
+    }
+}
+
+.img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 427px
+}
+
+.txt-box-msg {
+    min-height: 180px;
+    max-height: 180px;
+}
